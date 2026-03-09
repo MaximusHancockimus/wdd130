@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d3d3d3, #001f3f);
+  background-repeat: no-repeat; /* Just in case */
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/icenter.png'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+    font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+}
+
+.content-box {
+  background-color: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 5px 5px 0px black;
+  min-height: 400px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #004e63;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.devotional-form {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f4f6f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #004e63;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #004e63;
+}
+
+button {
+  background-color: #004e63;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #006b87;
+}

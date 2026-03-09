@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apostles Spotlights</title>
+
+  <style>
+
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+    .hero {
+      background: url("images/christus.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      min-height: 100vh;      
+      padding: 40px 20px;       
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; 
+      text-align: center;
+    }
+
+    .hero h1,
+    .hero h2 {
+      color: white;
+      margin: 10px 0 20px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.7); 
+    }
+
+    
+    .top-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(120px, 200px));
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 40px;
+      width: 100%;
+      max-width: 800px;
+      border-radius: 14px;
+
+    }
+
+    
+    .apostles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(120px, 200px));
+      gap: 20px;
+      justify-content: center;
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      
+
+    }
+
+   
+    .top-row img,
+    .apostles-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 7px solid white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero">
+    <h1>First Presidency</h1>
+
+    <div class="top-row">
+      <img src="images/eyring.webp" alt="President Oaks" />
+      <img src="images/oaks.webp" alt="President Eyring" />
+      <img src="images/christofferson.webp" alt="Elder Christofferson" />
+    </div>
+
+    <h2>Quorum of the Twelve Apostles</h2>
+
+    <div class="apostles-grid">
+      <img src="images/holland.webp" alt="Elder Holland" />
+      <img src="images/uchtdorf.webp" alt="Elder Uchtdorf" />
+      <img src="images/bednar.webp" alt="Elder Bednar" />
+      <img src="images/cook.webp" alt="Elder Cook" />
+      <img src="images/anderson.webp" alt="Elder Andersen" />
+      <img src="images/rasband.webp" alt="Elder Rasband" />
+      <img src="images/stevenson.webp" alt="Elder Stevenson" />
+      <img src="images/renlund.webp" alt="Elder Renlund" />
+      <img src="images/gong.webp" alt="Elder Gong" />
+      <img src="images/soares.webp" alt="Elder Soares" />
+      <img src="images/kearon.webp" alt="Elder Kearon" />
+      <img src="images/causse.webp" alt="Bishop Causse" />
+    </div>
+  </div>
+</body>
+</html>

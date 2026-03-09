@@ -1,0 +1,60 @@
+/* ICE-specific styles */
+
+.ice-main {
+    max-width: 1100px;
+    margin: 100px auto 50px;
+    padding: 0 40px;
+    position: relative;
+    z-index: 5;
+}
+
+.ice-main h1 {
+    text-align: center;
+    color: #F7EEBE;
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.ice-item {
+    background: rgba(67, 134, 124, 0.3);
+    border: 2px solid rgba(67, 134, 124, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.ice-item:hover {
+    transform: scale(1.02) translateX(5px);
+    background: rgba(67, 134, 124, 0.5);
+    border-color: rgba(67, 134, 124, 0.9);
+    box-shadow: 0 8px 20px rgba(67, 134, 124, 0.4);
+}
+
+.ice-item h3 {
+    color: #F7EEBE;
+    font-size: 22px;
+    margin: 0 0 15px 0;
+}
+
+.ice-item p {
+    color: #F7EEBE;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.ice-item a {
+    color: #F7EEBE;
+    text-decoration: none;
+    border-bottom: 2px solid #F7EEBE;
+    transition: all 0.3s ease;
+}
+
+.ice-item a:hover {
+    color: #eb099c;
+    border-bottom-color: #eb099c;
+}

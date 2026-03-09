@@ -1,0 +1,104 @@
+/* Add your CSS here to style your valentines day page */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+body {
+    font-family: 'UnifrakturCook', cursive;
+    background: linear-gradient(to right, #df7783, #ec2a44);
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+nav {
+    background: #d6336c;
+    padding: 15px 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+main{
+    text-align: center;
+
+}
+
+nav li {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+nav li:hover {
+    transform: scale(1.2);
+    color: #ffe3ec;
+}
+
+#wrapper {
+    background: rgb(248, 199, 199);
+    width: 900px;
+    max-width: 95%;
+    border-radius:20px;
+    box-shadow: 0 20 px 40 px rgba(0,0,0,0.2);
+    overflow: hidden;
+
+}
+
+h1 {
+    font-size: 8rem;
+    color: #d6336c;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+
+}
+h1 {
+    position: relative;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-50px, 50px); }
+    40% { transform: translate(50px, -50px); }
+    60% { transform: translate(-24px, -24px); }
+    80% { transform: translate(24px, 24px); }
+    100% { transform: translate(0); }
+}
+main img {
+    width: 500px;
+    margin: 20px 0 40px 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgb(242, 5, 5);
+    display: block;
+    margin: 20px auto 40px auto;
+
+}
+section {
+    background: #ec038b5e;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+h2 {
+    color: #c2185b;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #d6336c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}

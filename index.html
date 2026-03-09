@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximus Hancock's portal</title>
+    <link rel="stylesheet" href='styles/styles.css'>
+</head>
+<body>
+<video 
+  autoplay 
+  muted 
+  loop 
+  playsinline 
+  id="bg-video"
+>
+  <source src="images/Stars-vid.mp4" type="video/mp4">
+</video>
+    <div class="floating-head-container">
+  <img 
+    src="images/wizard-guy.png" 
+    alt="Laughing Wizard" 
+    class="floating-head" 
+    id="wizardHead"
+  >
+</div>
+
+    <header>
+        <img src="images/Max-Logo.jpg" alt="Site Logo" class="logo">
+<audio id="laughSound" preload="auto">
+  <source src="images/wizard-laugh.mp3" type="audio/mpeg">
+  
+</audio>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/wwr/site-plan-rafting.html">WWR</a></li>
+                <li><a href="/ice/ice.html">ICE</a></li>
+                <li><a href="/index.html">Project</a></li>
+            </ul>
+        </nav>
+    </header>
+           
+    <div style="height: 800px;"></div>
+        <main>
+            <section>Section 1</section>
+            <section>Section 2</section>
+            <section>Section 3</section>
+            <section>Section 4</section>
+        </main>
+        <footer>
+            <p>&copy; Hancock  2026</p>
+        </footer>
+<script>
+  const head = document.getElementById('wizardHead');
+  const audio = document.getElementById('laughSound');
+
+  audio.volume = 0.4;
+
+head.addEventListener('mouseenter', () => {
+  head.classList.add('laughing');
+  
+  if (audio) {
+    audio.currentTime = 0;
+    audio.play().catch(() => {});
+  }
+});
+
+head.addEventListener('mouseleave', () => {
+  setTimeout(() => {
+    head.classList.remove('laughing');
+  }, 700);
+});
+</script>
+<script>
+  const head = document.getElementById('wizardHead');
+  const audio = document.getElementById('laughSound');
+
+  if (audio) {
+    audio.volume = 0.5;
+  }
+
+  let stopTimer = null;
+
+  head.addEventListener('mouseenter', () => {
+    head.classList.add('laughing');
+
+    if (audio) {
+      audio.currentTime = 0;
+      audio.play().catch(err => {
+        console.log("Play prevented:", err);
+      });
+
+      if (stopTimer) clearTimeout(stopTimer);
+      stopTimer = setTimeout(() => {
+        audio.pause();
+        audio.currentTime = 0;
+      }, 3000);
+    }
+  });
+
+  head.addEventListener('mouseleave', () => {
+    if (audio) {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+
+    if (stopTimer) {
+      clearTimeout(stopTimer);
+      stopTimer = null;
+    }
+
+    setTimeout(() => {
+      head.classList.remove('laughing');
+    }, 1500);
+  });
+</script>
+</body>
+</html>
